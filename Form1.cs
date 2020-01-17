@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SamsSimpleSupportRequest.Utilties;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,21 @@ namespace SamsSimpleSupportRequest
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void nameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            nameChrCountLbl.Text = StringUtilities.CountChars(nameTextBox.Text) + " / " + nameTextBox.MaxLength + " characters";
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            emailChrCountLbl.Text = StringUtilities.CountChars(emailTextBox.Text) + " / " + emailTextBox.MaxLength + " characters";
+        }
+
+        private void problemTextBox_TextChanged(object sender, EventArgs e)
+        {
+            problemChrCountLbl.Text = StringUtilities.CountChars(problemTextBox.Text) + " / " + problemTextBox.MaxLength + " characters";
         }
     }
 }
