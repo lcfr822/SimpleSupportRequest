@@ -9,8 +9,8 @@ namespace SamsSimpleSupportRequest.Utilties
     /// </summary>
     public static class EmailUtility
     {
-        private const string USERNAME = "sss.requestservice@gmail.com";
-        private const string PWORD = "77?Vpxz#SmhB%74A";
+        private const string USERNAME = /*[REMOVED]*/;
+        private const string PWORD = /*[REMOVED]*/;
 
         /// <summary>
         /// 
