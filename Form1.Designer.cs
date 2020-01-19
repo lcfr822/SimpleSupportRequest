@@ -39,6 +39,8 @@
             this.problemLbl = new System.Windows.Forms.Label();
             this.problemTextBox = new System.Windows.Forms.TextBox();
             this.problemChrCountLbl = new System.Windows.Forms.Label();
+            this.sendButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // instructionLbl
@@ -84,7 +86,6 @@
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(167, 22);
             this.nameTextBox.TabIndex = 2;
-            this.nameTextBox.Text = "Samuel George";
             this.nameTextBox.TextChanged += new System.EventHandler(this.nameTextBox_TextChanged);
             // 
             // nameChrCountLbl
@@ -115,7 +116,6 @@
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(167, 22);
             this.emailTextBox.TabIndex = 5;
-            this.emailTextBox.Text = "sgeorge.dev@gmail.com";
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // emailChrCountLbl
@@ -147,8 +147,6 @@
             this.problemTextBox.Name = "problemTextBox";
             this.problemTextBox.Size = new System.Drawing.Size(384, 222);
             this.problemTextBox.TabIndex = 8;
-            this.problemTextBox.Text = "Soooo I have this tech problem that I would describe as this that and the other t" +
-    "hing.";
             this.problemTextBox.TextChanged += new System.EventHandler(this.problemTextBox_TextChanged);
             // 
             // problemChrCountLbl
@@ -160,11 +158,35 @@
             this.problemChrCountLbl.TabIndex = 9;
             this.problemChrCountLbl.Text = "0/512 characters";
             // 
+            // sendButton
+            // 
+            this.sendButton.Location = new System.Drawing.Point(144, 415);
+            this.sendButton.Name = "sendButton";
+            this.sendButton.Size = new System.Drawing.Size(75, 23);
+            this.sendButton.TabIndex = 10;
+            this.sendButton.TabStop = false;
+            this.sendButton.Text = "&Send";
+            this.sendButton.UseVisualStyleBackColor = true;
+            this.sendButton.Click += new System.EventHandler(this.sendButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.Location = new System.Drawing.Point(225, 415);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(75, 23);
+            this.clearButton.TabIndex = 11;
+            this.clearButton.TabStop = false;
+            this.clearButton.Text = "E&xit";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(552, 450);
+            this.Controls.Add(this.clearButton);
+            this.Controls.Add(this.sendButton);
             this.Controls.Add(this.problemChrCountLbl);
             this.Controls.Add(this.problemTextBox);
             this.Controls.Add(this.problemLbl);
@@ -177,7 +199,7 @@
             this.Controls.Add(this.instructionTextBox);
             this.Controls.Add(this.instructionLbl);
             this.Name = "Form1";
-            this.Text = "Sam\'s Simple Support Request";
+            this.Text = "Simple Support Request";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,6 +218,8 @@
         private System.Windows.Forms.Label problemLbl;
         private System.Windows.Forms.TextBox problemTextBox;
         private System.Windows.Forms.Label problemChrCountLbl;
+        private System.Windows.Forms.Button sendButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
 
